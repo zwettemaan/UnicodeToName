@@ -1,6 +1,3 @@
-// This version of the script is ExtendScript-only and is independent of the 
-// functions provided by the UXPScriptSparker framework
-
 var FILENAME_JSON_LOOKUP_TABLE = "lookup_table.json";
 var UNICODE_LOOKUP_BY_CHAR_CODE;
 
