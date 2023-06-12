@@ -5,9 +5,6 @@ lookup_table = {}
 
 # Iterate over Unicode code points
 for code_point in range(0x0000, 0xFFFF + 1):
-    # Skip Asian characters
-    if unicodedata.category(chr(code_point)).startswith('Lo'):
-        continue
 
     # Retrieve character name
     character_name = unicodedata.name(chr(code_point), '')

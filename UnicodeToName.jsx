@@ -33,17 +33,28 @@ function lookupCharacterName(in_char) {
     return retVal;
 }
 
+function testCharacter(c) {
+
+    var characterName = lookupCharacterName(c);
+
+    if (! characterName) {
+        alert("Character '" + c + "' not found in table");
+    }
+    else {
+        alert("'" + c + "' is called: " + characterName);
+    }
+}
+
 function main() {
 
 
-    var characterToLookup = "é";
+    var c1 = "é";
+    testCharacter(c1);
 
-    var characterName = lookupCharacterName(characterToLookup);
+    var c2 = "∇";
+    testCharacter(c2);
 
-    if (! characterName) {
-        alert("Character not found in table");
-    }
-    else {
-        alert(characterName);
-    }
+    var c3 = "⛵︎";
+    testCharacter(c3);
+
 }
